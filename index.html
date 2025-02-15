@@ -12,9 +12,9 @@
 <!--     <img src="/sad.png" width="500" height="300"> -->
     <a-scene arjs embedded>
         <!-- 第一个标记 -->
-<!--         <a-marker type="pattern" url="/sad.patt">
+            <a-marker type="pattern" url="/sad.patt">
             <!-- 文字 -->
-        
+            <a-text value="l'm very sad!!!" color="red" rotation="-90 0 0" position="0 1 0"></a-text>
             <!-- 图片 -->
             <a-image src="/sad.png" rotation="-90 0 0" position="0 0 0"></a-image>
         </a-marker>
@@ -25,9 +25,10 @@
             <a-text value="happy!!!!!" color="red" rotation="-90 0 0" position="0 1 0"></a-text>
             <!-- 图片 -->
             <a-image src="/happy.png" rotation="-90 0 0" position="0 0 0"></a-image>
-        </a-marker> -->
-    <a-marker-camera type="pattern" url="/sad.patt"></a-marker-camera>
-    <a-text value="l'm very sad!!!" color="red" rotation="-90 0 0" position="0 1 0"></a-text>
+        </a-marker> 
+<!--     <a-marker-camera type="pattern" url="/sad.patt"></a-marker-camera> -->
+         <a-entity camera></a-entity>
+   
     </a-scene>
 </body>
 </html>
