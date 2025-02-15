@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script
+        src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-scene arjs embedded>
+        <!-- 第一个标记 -->
+        <a-marker type="pattern" url="/plant/sad.patt">
+            <!-- 文字 -->
+            <a-text value="l'm very sad!!!" color="red" rotation="-90 0 0" position="0 1 0"></a-text>
+            <!-- 图片 -->
+            <a-image src="/plant/sad.png" rotation="-90 0 0" position="0 0 0"></a-image>
+        </a-marker>
+
+        <!-- 第二个标记 -->
+        <a-marker type="pattern" url="/plant/happy.patt">
+            <!-- 文字 -->
+            <a-text value="happy!!!!!" color="red" rotation="-90 0 0" position="0 1 0"></a-text>
+            <!-- 图片 -->
+            <a-image src="/plant/happy.png" rotation="-90 0 0" position="0 0 0"></a-image>
+        </a-marker>
+
+    </a-scene>
+</body>
+</html>
